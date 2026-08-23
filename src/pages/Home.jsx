@@ -4,7 +4,7 @@ import Highlights from "../sections/Highlights";
 import Gallery from "../sections/Gallery";
 import Facilities from "../sections/Facilities";
 import Price from "../sections/Price";
-import Contact from "../sections/Contact";
+import Contact from "../sections/Map";
 import { room } from "../data/room";
 
 export default function Home() {

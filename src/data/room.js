@@ -7,8 +7,6 @@ import stove from "../assets/stove.jpg";
 import gas from "../assets/gas.jpg";
 import roomFull from "../assets/room-full.jpg";
 
-// All room content lives here. To add another room later, duplicate this
-// object with new content — the whole site is built to read from this file.
 export const room = {
   name: "Muding Kerobokan Room",
   location: "Muding, Kerobokan, Bali",
@@ -18,14 +16,14 @@ export const room = {
   mapEmbedUrl: "https://www.google.com/maps?q=-8.6423051,115.1754676&hl=en&z=16&output=embed",
   mapLink: "https://maps.app.goo.gl/zr59vjz63Cia4dwm9",
   description:
-    "A self-contained, fully furnished room with its own kitchen and bathroom, plus a private garden path at your door — kept clean every day. Minutes from Canggu and Seminyak.",
+    "A self-contained, fully furnished room with its own kitchen and bathroom, plus a garden path at your door that kept clean every day. Minutes from Canggu and Seminyak.",
   tour: [
     {
       step: "01",
       label: "At your door",
       title: "A private garden, tended daily",
       image: garden2,
-      text: "A stone path lined with greenery leads straight to your room — quiet, shaded, and cleaned every day.",
+      text: "A stone path lined with greenery leads straight to your room. Quiet, shaded, and cleaned every day.",
     },
     {
       step: "02",
@@ -39,7 +37,7 @@ export const room = {
       label: "Work & storage",
       title: "Desk, chair, and mirrored wardrobe",
       image: deskWardrobe,
-      text: "A desk by the window with natural light — good for remote work. Two-door wardrobe with a mirror and four drawers.",
+      text: "A desk by the window with natural light. Good for remote work. Two-door wardrobe with a mirror and four drawers.",
     },
     {
       step: "04",
@@ -58,7 +56,7 @@ export const room = {
   ],
   facilities: {
     Room: ["King-size bed", "Bedside tables", "Work desk and chair", "Wardrobe with mirror", "Air conditioning", "TV"],
-    "Private bathroom": ["Squat toilet", "Shower", "Water heater"],
+    "Private bathroom": ["Sit-down toilet", "Shower", "Water heater"],
     "Private kitchen": ["Gas stove + tank", "Sink", "Storage cabinet", "Fridge"],
   },
   gallery: [roomFull, gas, deskWardrobe, garden],

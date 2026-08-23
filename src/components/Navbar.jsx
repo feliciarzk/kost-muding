@@ -6,7 +6,7 @@ const LINKS = [
   { id: "rooms", label: "Photos" },
   { id: "facilities", label: "Facilities" },
   { id: "price", label: "Price" },
-  { id: "contact", label: "Contact" },
+  { id: "map", label: "Map" },
 ];
 
 export default function Navbar() {

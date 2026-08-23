@@ -1,3 +1,4 @@
+import IntroLoader from "./components/IntroLoader";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -7,6 +8,7 @@ import { room } from "./data/room";
 export default function App() {
   return (
     <>
+      <IntroLoader />
       <Navbar />
       <Home />
       <Footer />

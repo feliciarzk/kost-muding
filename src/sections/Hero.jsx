@@ -1,11 +1,10 @@
-import WhatsAppButton from "../components/WhatsAppButton";
 import frontDoor from "../assets/front-door.jpeg";
 
 const features = [
-  { icon: "🍳", label: "Own kitchen" },
-  { icon: "🚿", label: "Private bathroom" },
-  { icon: "🧹", label: "Cleaned regularly" },
-  { icon: "🤝", label: "Friendly owner" },
+  { label: "Own kitchen" },
+  { label: "Private bathroom" },
+  { label: "Fresh linen monthly" },
+  { label: "Friendly owner" },
 ];
 
 export default function Hero({ room }) {
@@ -13,6 +12,7 @@ export default function Hero({ room }) {
     <section id="home" className="hero">
       <div className="hero-media">
         <img src={frontDoor} alt="Entrance path to the room" />
+        <div className="hero-fog" />
         <div className="hero-scrim" />
       </div>
 
@@ -27,9 +27,9 @@ export default function Hero({ room }) {
             </h1>
             <p className="hero-lede">
               A self-contained room with its own kitchen and bathroom, kept
-              clean and well looked after. Most tenants end up staying for
-              years — if something comes up, the owner actually helps out,
-              it's never just a hands-off rental.
+              clean and well looked after. Housekeeping is self-service, with
+              a paid cleaning service available on request. Most tenants end
+              up staying for years.
             </p>
             <ul className="hero-features">
               {features.map((f, i) => (
@@ -38,25 +38,10 @@ export default function Hero({ room }) {
                   className="hero-feature"
                   style={{ animationDelay: `${0.5 + i * 0.08}s` }}
                 >
-                  <span className="hero-feature-icon">{f.icon}</span>
                   {f.label}
                 </li>
               ))}
             </ul>
-          </div>
-
-          <div className="hero-panel">
-            <p className="hero-desc">{room.description}</p>
-            <div className="hero-price">
-              <span className="hero-price-amount">
-                Rp {room.price.toLocaleString("id-ID")}
-              </span>
-              <span className="hero-price-label">per month</span>
-            </div>
-            <WhatsAppButton phone={room.whatsapp} className="hero-cta-btn">
-              Chat on WhatsApp
-            </WhatsAppButton>
-            <p className="hero-panel-note">Usually replies within minutes.</p>
           </div>
         </div>
       </div>

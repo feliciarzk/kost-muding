@@ -1,5 +1,3 @@
-// Tombol WhatsApp yang dipakai di banyak tempat (hero, CTA, floating button).
-// "variant" dan "block" tinggal atur lewat props, nggak perlu bikin komponen baru tiap butuh gaya beda.
 export default function WhatsAppButton({
   phone,
   message = "Hi! I saw your room listing and I'd like to ask a few questions.",
