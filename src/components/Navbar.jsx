@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
+import { room } from "../data/Room";
 
 const LINKS = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
-  { id: "rooms", label: "Photos" },
-  { id: "facilities", label: "Facilities" },
-  { id: "price", label: "Price" },
+  { id: "room", label: "Rooms" },
+  { id: "contact", label: "Contact" },
   { id: "map", label: "Map" },
 ];
 
@@ -37,7 +37,7 @@ export default function Navbar() {
   return (
     <nav className="mk-nav">
       <div className="mk-nav-card">
-        <span className="mk-brand">Kost Muding</span>
+        <span className="mk-brand">{room.name}</span>
 
         <div className="mk-links">
           {LINKS.map((link) => {

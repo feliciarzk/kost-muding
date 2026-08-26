@@ -1,11 +1,10 @@
-import { room } from "../data/room";
+import { room } from "../data/Room";
 
 const LINKS = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
-  { id: "rooms", label: "Photos" },
-  { id: "facilities", label: "Facilities" },
-  { id: "price", label: "Price" },
+  { id: "room", label: "Rooms" },
+  { id: "contact", label: "Contact" },
   { id: "map", label: "Map" },
 ];
 
