@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://room-rent-kerobokan-bali.com/sitemap.xml

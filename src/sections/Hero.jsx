@@ -15,7 +15,10 @@ export default function Hero({ room }) {
   return (
     <section id="home" className="hero">
       <div className="hero-media">
-        <img src={frontDoor} alt={`${room.name} entrance path`} />
+        <img
+          src={frontDoor}
+          alt={`${room.name} entrance path in ${room.location}`}
+        />
         <div className="hero-fog" />
         <div className="hero-scrim" />
       </div>
@@ -26,17 +29,22 @@ export default function Hero({ room }) {
             <div className="hero-eyebrow">
               {room.name} — {room.location}
             </div>
+
             <h1 className="hero-title">
-              A happy home
+              A happy room to rent
               <br />
               in <em>Muding Kerobokan.</em>
             </h1>
+
             <p className="hero-lede">
-              Move in with just a suitcase and settle into a space that's
-              genuinely yours. Fully furnished, always private, and cared
-              for like it matters. It's the kind of room people plan to stay
-              in for a few months and end up calling home for years.
+              Find a fully furnished private room for monthly rent in
+              Kerobokan, Bali. Move in with just a suitcase and settle into a
+              space that's genuinely yours. Always private, thoughtfully
+              equipped, and cared for like it matters. It's the kind of room
+              people plan to stay in for a few months and end up calling home
+              for years.
             </p>
+
             <ul className="hero-features">
               {features.map((f, i) => (
                 <li
@@ -57,12 +65,14 @@ export default function Hero({ room }) {
                 alt={`${room.name} - ${collagePhotos[0].label}`}
               />
             </div>
+
             <div className="hero-collage-accent hero-collage-accent-1">
               <img
                 src={collagePhotos[1].heroImage}
                 alt={`${room.name} - ${collagePhotos[1].label}`}
               />
             </div>
+
             <div className="hero-collage-accent hero-collage-accent-2">
               <img
                 src={collagePhotos[2].heroImage}
